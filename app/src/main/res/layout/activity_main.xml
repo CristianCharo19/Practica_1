@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/form"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/black"
+            app:helperText="@string/required_text"
+            app:hintTextColor="@color/darkviolet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/black"
+            app:helperText="@string/required_text"
+            app:hintTextColor="@color/darkviolet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:helperText="@string/required_text"
+            app:hintTextColor="@color/darkviolet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rep_password_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/black"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperText="@string/required_text"
+            app:hintTextColor="@color/darkviolet">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rep_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:hint="@string/repeat_password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/genero_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/genre"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/female"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/darkviolet"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/darkviolet" />
+
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/hobbies_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/hobbies"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sport_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sport"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <CheckBox
+                android:id="@+id/read_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/read"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <CheckBox
+                android:id="@+id/eat_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/eat"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <CheckBox
+                android:id="@+id/dance_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dance"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthday_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthday_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:focusable="false"
+                android:hint="@string/birthday"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/birthplace_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/birthplace"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/city_list" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/darkviolet"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/darkviolet"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/darkviolet" />
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/info"
+            android:textColor="@color/darkviolet"
+            android:textColorHighlight="@color/darkviolet"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/darkviolet"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

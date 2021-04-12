@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Practica 1</string>
+    <string name="form">Formulario</string>
+    <string name="required_text">Campo requerido</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="repeat_password">Repita la contraseña</string>
+    <string name="save">Guardar</string>
+    <string name="info">Información del usuario: </string>
+    <string name="password_error">Las contraseñas no son iguales</string>
+    <string name="form_error">Debe digitar los campos requeridos</string>
+    <string name="genre">Género</string>
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+    <string name="hobbies">Pasatiempos</string>
+    <string name="sport">Deporte</string>
+    <string name="read">Leer</string>
+    <string name="eat">Comer</string>
+    <string name="dance">Bailar</string>
+    <string name="name">Nombre</string>
+    <string name="birthday">Fecha de cumpleaños</string>
+    <string name="birthplace">Lugar de nacimiento</string>
+    <string-array name="city_list">
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Medellín</item>
+        <item>Barranquilla</item>
+        <item>Pereira</item>
+    </string-array>
+</resources>
